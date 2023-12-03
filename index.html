@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <div class="logo"><img src="css/img/logo.svg" alt=""></div>
+        <div class="logo"><a href=""><img src="css/img/logo.svg" alt=""></a></div>
         <nav>
-            <ul>
-                <li><a href="#">Exhibitions</a></li>
+            <ul class="col-6">
+                <li class="exhibitions"><a href="#">Exhibitions</a></li>
                 <li><a href="#">For Families</a></li>
                 <li><a href="#">Visit</a></li>
                 <li><a href="#">About</a></li>
@@ -21,11 +21,126 @@
             </ul>
         </nav>
     </header>
-    <div class="hero-section">
+
+    <div class="hero-section col-12">
         <div class="hero-container">
             <img src="" alt="">
         </div>
     </div>
-    
+    <h2>MEET NANNA DITZEL</h2>
+    <div class="section-2 col-12">
+        <div class="section-2-big-square col-5"></div>
+        <div class="sqaure-container">
+            <div class="section-2-small-squares col-5">
+                <div class="small-box"><img class="grayscale-effect" src="css/img/9.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/8.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/7.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/6.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/5.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/4.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/3.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/2.jpg" alt=""></div>
+                <div class="small-box"><img class="grayscale-effect" src="css/img/1.jpg" alt=""></div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="section-3 col-12">
+        <div class="wide-box"></div>
+        <div class="wide-box"></div>
+    </div>
+
+    <div class="section-4 col-12">
+        <div class="mid-box"></div>
+        <div class="mid-box"></div>
+        <div class="mid-box"></div>
+        <div class="mid-box"></div>
+    </div>
+
+    <div class="section-5 col-12">
+        <div class="square-box-33"></div>
+        <div class="square-box-33"></div>
+        <div class="square-box-33"></div>
+    </div>
+
+    <div class="section-6 col-12">
+        <div class="large-grid">
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+            <div class="small-box-v0"></div>
+        </div>
+    </div>
+    <div class="custom-shape-divider-top-1701559955">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+<style>
+.custom-shape-divider-top-1701559955 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1701559955 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 128px;
+}
+
+.custom-shape-divider-top-1701559955 .shape-fill {
+    fill: #108CB0;
+}
+</style>    
+
+    <script>
+        const images = document.querySelectorAll('.grayscale-effect');
+  
+        function randomizeGrayscale() {
+          images.forEach(image => {
+            const randomValue = Math.random() * 100; // Generate a random value between 0 and 100
+            image.style.filter = `grayscale(${randomValue}%)`;
+          });
+        }
+  
+        setTimeout(() => {
+          const intervalId = setInterval(() => {
+            randomizeGrayscale(); // Randomize grayscale every 1/3 seconds
+          }, 333);
+  
+          setTimeout(() => {
+            clearInterval(intervalId);
+  
+            images.forEach(image => {
+              image.style.filter = 'grayscale(0%)'; // Set grayscale to 0% after 4 seconds
+            });
+          }, 4000);
+        }, 0);
+      </script>
+    <footer>
+        <p>sadsadsa</p>
+    </footer>
+      
 </body>
 </html>
