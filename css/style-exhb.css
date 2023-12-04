@@ -48,6 +48,7 @@ nav li a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 90px;
 }
 
 .small-img-hero{
@@ -102,7 +103,14 @@ nav li a{
 .yellow-blob{
     position: absolute;
     right: 0;
-    top: 80%;
+    top: 60%;
+    z-index: -1;
+}
+
+.blue-blob{
+    position: absolute;
+    left: 0;
+    top: 110%;
     z-index: -1;
 }
 
