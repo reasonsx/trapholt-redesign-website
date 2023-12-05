@@ -9,28 +9,31 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* header {
+header {
     width: auto;
     height: auto;
-    padding: 24px 0 0 0;
 }
 .logo {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    margin: 1% 0 1.5%;
+    padding: 0 8.33%;
+}
+.logo img {
+    width: 100%;
+    height: 100px;
 }
 nav {
-    background-color: #fff;
     width: auto;
     height: auto;
-    padding: 0 25%;
+    padding: 0 8.33%;
 }
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +45,22 @@ nav li a{
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
-} */
+}
+nav li:hover a{
+    color: #fafafa;
+}
+.exhibitions:hover {
+    background-color: #108CB0;
+}
+.for-families:hover {
+    background-color: #107F00;
+}
+.about:hover {
+    background-color: #ED6915;
+}
+.contact:hover {
+    background-color: #E33877;
+}
 
 .heading{
     font-family: 'Work Sans', sans-serif;

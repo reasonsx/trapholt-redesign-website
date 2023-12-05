@@ -97,24 +97,20 @@ nav li a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
 }
+nav li:hover a{
+    color: #fafafa;
+}
 .exhibitions:hover {
     background-color: #108CB0;
 }
 .for-families:hover {
-    background-color: #E33877;
-}
-.visit:hover {
-    background-color: #EE709E;
-}
-.about {
-    background-color: #F9C411;
-    /* text-decoration: underline; */
+    background-color: #107F00;
 }
 .about:hover {
-    background-color: #F9C411;
+    background-color: #ED6915;
 }
 .contact:hover {
-    background-color: #ED6915;
+    background-color: #E33877;
 }
 
 
