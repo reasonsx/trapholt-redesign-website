@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-header {
+/* header {
     width: auto;
     height: auto;
     padding: 24px 0 0 0;
@@ -42,7 +42,7 @@ nav li a{
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
-}
+} */
 
 .heading{
     font-family: 'Work Sans', sans-serif;

@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-header {
+/* header {
   width: auto;
   height: auto;
   padding: 24px 0 0 0;
@@ -18,8 +18,7 @@ header {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+ 
 }
 nav {
   background-color: #fff;
@@ -42,7 +41,7 @@ nav li a {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-}
+} */
 .hero-section {
   /* background-color: red; */
   height: auto;
