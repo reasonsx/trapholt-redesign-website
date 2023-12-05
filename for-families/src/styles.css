@@ -65,6 +65,12 @@ nav li:hover a{
 .for-families:hover {
   background-color: #107F00;
 }
+.for-families {
+  background-color: #107F00;
+}
+.for-families a {
+  color: #fafafa;
+}
 .about:hover {
   background-color: #ED6915;
 }

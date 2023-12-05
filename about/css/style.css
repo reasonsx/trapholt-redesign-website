@@ -109,6 +109,12 @@ nav li:hover a{
 .about:hover {
     background-color: #ED6915;
 }
+.about {
+    background-color: #ED6915;
+}
+.about a {
+    color: #fafafa;
+}
 .contact:hover {
     background-color: #E33877;
 }

@@ -61,6 +61,12 @@ nav li:hover a{
 .contact:hover {
     background-color: #E33877;
 }
+.contact {
+    background-color: #E33877;
+}
+.contact a {
+    color: #fafafa;
+}
 
 .heading{
     font-family: 'Work Sans', sans-serif;

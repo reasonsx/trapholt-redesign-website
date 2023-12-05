@@ -52,6 +52,12 @@ nav li:hover a{
 .exhibitions:hover {
     background-color: #108CB0;
 }
+.exhibitions {
+    background-color: #108CB0;
+}
+.exhibitions a {
+    color: #fafafa;
+}
 .for-families:hover {
     background-color: #107F00;
 }
