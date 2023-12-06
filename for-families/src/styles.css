@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #e33877 #fafafa;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e33877 #fafafa;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #e33877;
-    border-radius: 0px;
-    /* border: 0px outset #ab2626; */
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #e33877;
+  border-radius: 0px;
+  /* border: 0px outset #ab2626; */
+}
 body {
   margin: 0;
   padding: 0;
@@ -68,38 +68,39 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav li a{
+nav li a {
   font-size: 24px;
   margin: 0;
   padding: 0;
   color: #0f0f0f;
   text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
-nav li:hover a{
+nav li:hover a {
   color: #fafafa;
 }
 .exhibitions:hover {
-  background-color: #108CB0;
+  background-color: #108cb0;
 }
 .for-families:hover {
-  background-color: #107F00;
+  background-color: #107f00;
 }
 .for-families {
-  background-color: #107F00;
+  background-color: #107f00;
 }
 .for-families a {
   color: #fafafa;
 }
 .about:hover {
-  background-color: #ED6915;
+  background-color: #ed6915;
 }
 .contact:hover {
-  background-color: #E33877;
+  background-color: #e33877;
 }
 .hero-section {
   /* background-color: red; */
+
   height: auto;
   display: flex;
   justify-content: center;
@@ -108,14 +109,46 @@ nav li:hover a{
   margin: 24px 0 0 0;
 }
 .hero-container {
-  background-color: black;
   width: 100%;
-  padding-top: 50%;
+  margin-top: 10px;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   /* padding: 0 16.66%; */
 }
+.carousel {
+  width: 100%; /* Ensure the carousel takes the full width of the container */
+  max-width: 100%; /* Ensure the images inside the carousel do not exceed the container width */
+}
+
+.carousel-item img {
+  width: 100%; /* Make sure the images inside the carousel take the full width */
+  height: 700px; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: white;
+  width: 60%; /* Set the desired width */
+  margin: 0 auto; /* Center the caption horizontally */
+  text-align: center; /* Center the text within the caption */
+}
+.carousel-caption > h2 {
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #0f0f0f;
+  max-width: 100%; /* Set a maximum width to prevent overflow */
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 676px) {
+  .carousel-caption > h2 {
+    font-size: 36px; /* Small screens */
+  }
+}
+
 .heading {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;

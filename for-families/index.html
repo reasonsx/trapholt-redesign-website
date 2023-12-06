@@ -11,16 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
+  
     <body>
       <header>
         <div class="logo"><a href="/main/index.html"><img src="/main/css/img/logo.svg" alt=""></a></div>
@@ -35,7 +30,31 @@
     </header>
       <div class="hero-section">
         <div class="hero-container">
-          <img src="" alt="" />
+          <!-- carousel -->
+<div class="carousel slide carousel-fade" id="myslider"  data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="src/img/treasurehunt-2.jpg" alt="">
+    <div class="carousel-caption">
+      <h2> TREASURE HUNT</h2>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img src="src/img/paint.jpg" alt="">
+      <div class="carousel-caption">
+        <h2>
+        PILFIZ ZONES</h2>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="src/img/child paint.jpg" alt="">
+      <div class="carousel-caption">
+    <h2>   ART WORKSHOPS</h2> 
+      </div>
+    </div>
+  </div>
+
+</div>
         </div>
       </div>
 <!-- added svg / i know it says yellow but its green, i will change it later -->
@@ -105,7 +124,7 @@
           <div class="col-md-6">
             <div class="activity-img" data-aos="fade-up-left">
               <img
-                src="/src/images/ditzelcollage.png"
+                src="src/img/treasurehunt-2.jpg"
                 alt=""
                 class="img-fluid"
               />
@@ -144,6 +163,15 @@
     <footer>
       <div class="footer"></div>
     </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  $(function (){
+    $('.carousel').carousel({
+      interval: 4000
+    });
+  });
+</script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -151,6 +179,7 @@
         once: false,
       });
     </script>
+
     </body>
-  </body>
+  
 </html>
