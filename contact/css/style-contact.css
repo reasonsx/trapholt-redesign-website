@@ -116,6 +116,12 @@ p{
     z-index: -1;
 }
 
+.text {
+    display: flex;
+    flex-direction: row; /* Set the flex container to a row layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
 
 
 footer{
