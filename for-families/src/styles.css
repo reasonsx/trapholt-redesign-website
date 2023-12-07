@@ -148,10 +148,11 @@ nav li:hover a {
   }
 }
 
-.heading {
+.heading > h1 {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
   text-align: center;
+  font-size: 50px;
 }
 
 .container {
@@ -167,7 +168,7 @@ nav li:hover a {
   background-color: green;
   border-radius: 7px;
   position: relative;
-  margin: 10px;
+  margin: 0;
   padding: 0;
   width: 100vw;
 }
@@ -175,6 +176,8 @@ nav li:hover a {
 .section-2 {
   background-color: #fafafa;
   position: relative;
+  margin: 10px;
+  padding: 0;
   width: 100vw;
 }
 .activity-img {
@@ -185,12 +188,13 @@ nav li:hover a {
   align-items: center;
   margin: 0;
   border-radius: 7px;
+  overflow: hidden;
 }
 
 .activity-text {
   color: white;
-  margin: 0 40px 0 40px;
-  padding: 80px;
+  margin: 40px;
+
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -205,11 +209,24 @@ nav li:hover a {
 .middle-text {
   color: #0f0f0f;
 }
-.activity-img img {
-  width: 500px;
-  height: 300px;
-  object-fit: contain;
+.middle-img {
+  margin-left: 90px;
+}
+.activity-img {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   border-radius: 7px;
+  overflow: hidden;
+}
+
+.activity-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or use object-fit: fill; depending on your preference */
 }
 
 .collage2 {
