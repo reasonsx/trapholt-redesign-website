@@ -100,17 +100,16 @@ nav li:hover a {
 }
 .hero-section {
   /* background-color: red; */
-
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 8.33%;
-  margin: 24px 0 0 0;
+  margin: 1.5% 0 2.5% 0;
 }
 .hero-container {
   width: 100%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   height: fit-content;
   display: flex;
   justify-content: center;
