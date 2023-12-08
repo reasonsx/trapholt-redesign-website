@@ -104,7 +104,13 @@ nav li:hover a{
     transition: 0.5s;
     
 }
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 8.33%;
+        /* --bs-gutter-x: 1.5rem; */
 
+}
 .small-img-hero:hover {
     filter: grayscale(0%);
     
