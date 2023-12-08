@@ -107,7 +107,7 @@ nav li:hover a{
 .container {
     width: 100%;
     height: auto;
-    margin: 0 8.33%;
+    /* margin: 0 8.33%; */
         /* --bs-gutter-x: 1.5rem; */
 
 }
