@@ -7,20 +7,16 @@
     scrollbar-width: auto;
     scrollbar-color: #e33877 #fafafa;
 }
-
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 16px;
 }
-
 *::-webkit-scrollbar-track {
     background: transparent;
 }
-
 *::-webkit-scrollbar-thumb {
     background-color: #e33877;
     border-radius: 0px;
-    /* border: 0px outset #ab2626; */
 }
 
 body {
@@ -33,9 +29,6 @@ body {
     flex-direction: column;
 }
 
-/* .top-wave {
-    opacity: 0.9;
-} */
 .yellow-blob {
     position: absolute;
     left: 0;
@@ -43,7 +36,6 @@ body {
     height: 96%;
     width: auto;
     z-index: -1;
-    /* opacity: 0.9; */
 }
 
 .blue-blob {
@@ -59,11 +51,10 @@ body {
 
 h2 {
     font-size: 64px;
-    font-weight: 800;
-    /* margin: 0 0 1rem 0; */
+    font-weight: 700;
     padding: 0;
     color: #0f0f0f;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     @media screen and (max-width: 768px) {
         font-size: 48px;
     }
@@ -111,13 +102,16 @@ nav li a {
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
 }
-
-nav li:hover a {
-    color: #fafafa;
+/* Apply styles for the active state */
+nav li.active a {               
+    border-bottom: 3px solid #0f0f0f;
+}
+nav li a:hover {
+    border-bottom: 3px solid #0f0f0f;
 }
 
-.home:hover {
-    background-color: #0f0f0f;
+/* .home:hover {
+    background-color: red;
 }
 .exhibitions:hover {
     background-color: #108CB0;
@@ -133,7 +127,7 @@ nav li:hover a {
 
 .contact:hover {
     background-color: #E33877;
-}
+} */
 
 .hero-section {
     /* background-color: #F9C411; */

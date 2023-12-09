@@ -97,10 +97,13 @@ nav li a{
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
 }
-nav li:hover a{
-    color: #fafafa;
+nav li.active a {               
+    border-bottom: 3px solid #0f0f0f;
 }
-.exhibitions:hover {
+nav li a:hover {
+    border-bottom: 3px solid #0f0f0f;
+}
+/* .exhibitions:hover {
     background-color: #108CB0;
 }
 .for-families:hover {
@@ -117,7 +120,7 @@ nav li:hover a{
 }
 .contact:hover {
     background-color: #E33877;
-}
+} */
 
 
 .hero-section {
