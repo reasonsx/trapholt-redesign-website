@@ -59,7 +59,7 @@ body {
 
 h2 {
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 800;
     /* margin: 0 0 1rem 0; */
     padding: 0;
     color: #0f0f0f;
@@ -116,6 +116,9 @@ nav li:hover a {
     color: #fafafa;
 }
 
+.home:hover {
+    background-color: #0f0f0f;
+}
 .exhibitions:hover {
     background-color: #108CB0;
 }
