@@ -42,15 +42,18 @@ header {
   margin: 1% 0 1.5%;
   padding: 0 8.33%;
 }
+
 .logo img {
   width: 100%;
   height: 100px;
 }
+
 nav {
   width: auto;
   height: auto;
   padding: 0 8.33%;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -58,29 +61,22 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav li a {
   font-size: 24px;
   margin: 0;
   padding: 0;
   color: #0f0f0f;
   text-decoration: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
 }
-nav li:hover a {
-  color: #fafafa;
+/* Apply styles for the active state */
+nav li.active a {               
+  border-bottom: 3px solid #0f0f0f;
 }
-.exhibitions:hover {
-  background-color: #108cb0;
-}
-.for-families:hover {
-  background-color: #107f00;
-}
-.about:hover {
-  background-color: #ed6915;
-}
-.contact:hover {
-  background-color: #e33877;
+nav li a:hover {
+  border-bottom: 3px solid #0f0f0f;
 }
 
 .hero-section {
