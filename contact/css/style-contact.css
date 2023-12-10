@@ -115,7 +115,7 @@ p{
 .blue-blob{
     position: absolute;
     left: 0;
-    top: 180%;
+    top: 1600px;
     z-index: -1;
 }
 
