@@ -257,10 +257,10 @@ nav li:hover a{
     margin: 0 8.33%;
     padding: 0;
 } */
-/* .small-img-hero:hover {
+.small-img-hero:hover {
     filter: grayscale(100%);
     
-} */
+}
 
 /* .exhb-img img{
     max-width: 100%;
@@ -290,6 +290,8 @@ nav li:hover a{
 .exhb-text{
     padding-left: 5%;
     padding-top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 /* .exhb-img:hover .overlay{

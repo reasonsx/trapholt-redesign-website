@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -32,7 +31,31 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.blob-1 {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    height: 90%;
+    width: auto;
+    rotate: 180deg;
+    z-index: -1;
+}
+.blob-2 {
+    position: absolute;
+    right: 60px;
+    top: 950px;
+    height: 90%;
+    width: auto;
+    z-index: -1;
+}
+.blob-3 {
+    position: absolute;
+    left: 50px;
+    top: 1800px;
+    height: 90%;
+    width: auto;
+    z-index: -1;
+}
 .yellow-blob {
     position: absolute;
     left: 0;

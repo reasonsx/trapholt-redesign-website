@@ -30,6 +30,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+h2 {
+    font-size: 64px;
+    font-weight: 700;
+    padding: 0;
+    color: #0f0f0f;
+    font-family: 'Work Sans', sans-serif;
+
+    @media screen and (max-width: 768px) {
+        font-size: 48px;
+    }
+}
 header {
     width: auto;
     height: auto;
