@@ -146,6 +146,7 @@ nav li a:hover {
   width: 60%; /* Set the desired width */
   margin: 0 auto; /* Center the caption horizontally */
   text-align: center; /* Center the text within the caption */
+  padding: 5px;
 }
 .carousel-caption > h2 {
   font-size: 70px;
@@ -198,9 +199,7 @@ nav li a:hover {
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
 }
-.middle-text {
-  color: white;
-}
+
 .activity-img {
   width: 600px;
   height: 600px;
