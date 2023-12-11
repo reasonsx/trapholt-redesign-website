@@ -274,3 +274,14 @@ nav li a:hover {
   margin: 0;
   padding: 0;
 }
+
+.btn {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: green;
+  color: white;
+  border: 1 solid white;
+}
