@@ -42,9 +42,9 @@ body {
 }
 .blob-2 {
     position: absolute;
-    right: 60px;
-    top: 950px;
-    height: 90%;
+    right: 30px;
+    top: 1800px;
+    height: 80%;
     width: auto;
     z-index: -1;
 }
@@ -215,7 +215,7 @@ nav li a:hover {
 }
 
 .wide-box:not(:hover) .overlay {
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s ease-out;
 }
 
@@ -281,16 +281,35 @@ nav li a:hover {
     height: auto;
     display: flex;
     justify-content: space-between;
+    overflow: hidden; /* Hide scrollbar */
 }
 
+
 .mid-box {
+    flex: 0 0 24%; /* 24% width for each mid-box */
+    margin-right: 1%; /* Adjust margin as needed */
     position: relative;
     width: 24%;
     padding-top: 24%;
     background-color: #0f0f0f;
     display: flex;
+    @media screen and (max-width: 768px) {
+        flex: 0 0 48%; /* 48% width for each mid-box */
+        margin-right: 2%; /* Adjust margin as needed */
+        width: 48%;
+        padding-top: 48%;
+        
+    }
+    animation: scrollMidBoxes 30s linear infinite; /* Makes the boxes to be moving for 20s */
 }
-
+@keyframes scrollMidBoxes {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(-25% * 7)); /* will add comment here later */
+    }
+}
 .mid-box:nth-child(1) {
     background-color: #108CB0;
 }
@@ -305,6 +324,12 @@ nav li a:hover {
 
 .mid-box:nth-child(4) {
     background-color: #ED6915;
+}
+.mid-box:nth-child(5) {
+    background-color: #107F00;
+}
+.mid-box:nth-child(6) {
+    background-color: #F9C411;
 }
 
 .mid-box:nth-child(1):hover {
@@ -403,7 +428,7 @@ nav li a:hover {
 }
 
 .box-section-8:not(:hover) .overlay {
-    opacity: 0;
+    /* opacity: 0; */
     transition: all 0.5s ease-out;
 }
 
