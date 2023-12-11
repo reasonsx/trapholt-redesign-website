@@ -156,12 +156,6 @@ nav li a:hover {
   overflow-wrap: break-word;
 }
 
-@media (max-width: 676px) {
-  .carousel-caption > h2 {
-    font-size: 36px; /* Small screens */
-  }
-}
-
 .heading > h1 {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
@@ -178,18 +172,10 @@ nav li a:hover {
 }
 
 .section-1,
+.section-2,
 .section-3 {
-  background-color: green;
+  background-color: #108cb0;
   position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-}
-
-.section-2 {
-  position: relative;
-  background-color: green;
-
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -216,51 +202,18 @@ nav li a:hover {
   color: white;
 }
 
+.activity-img {
+  width: 600px;
+  height: 600px;
+  display: flex;
+
+  margin: 0;
+  overflow: hidden;
+}
 .activity-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.custom-shape-divider-bottom-1701722040 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1701722040 svg {
-  position: relative;
-  display: block;
-  width: calc(142% + 1.3px);
-  height: 119px;
-}
-
-.custom-shape-divider-bottom-1701722040 .shape-fill {
-  fill: #fafafa;
-}
-
-.custom-shape-divider-top-1701720191 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1701720191 svg {
-  position: relative;
-  display: block;
-  width: calc(154% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-top-1701720191 .shape-fill {
-  fill: #fafafa;
 }
 
 .footer {
@@ -276,7 +229,53 @@ nav li a:hover {
 }
 
 .btn:hover {
-  background-color: green;
+  background-color: #0f0f0f;
   color: white;
   border: 1 solid white;
+}
+
+.custom-shape-divider-top-1702314217 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1702314217 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-top-1702314217 .shape-fill {
+  fill: #fafafa;
+}
+
+.custom-shape-divider-bottom-1702314374 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1702314374 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 112px;
+}
+
+.custom-shape-divider-bottom-1702314374 .shape-fill {
+  fill: #fafafa;
+}
+@media (max-width: 676px) {
+  .carousel-caption > h2 {
+    font-size: 36px; /* Small screens */
+  }
 }
