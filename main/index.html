@@ -1,125 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trapholt</title>
-    <link rel="icon" type="image/x-icon" href="icon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trapholt</title>
+  <link rel="icon" type="image/x-icon" href="icon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- <div id="loading-page">
-    <div class="loader">
-      <img src="css/img/logo.svg" alt="">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;" filter="blur(0px)" transform="rotate(-63)">
-        <path id="blob" fill="url(#gradient)" style="opacity: 1;">
-          <animate attributeName="d" dur="2300ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;
-            M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;
-            M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;
-            M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate>
-        </path>
-        <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color: rgb(227, 56, 119);"></stop>
-            <stop offset="100%" style="stop-color: rgb(227, 56, 119);"></stop>
-          </linearGradient>
-        </defs>
+  <header>
+    <div class="logo"><a href=""><img src="css/img/logo.svg" alt=""></a>
+      <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="64.936" height="43.291"
+        viewBox="0 0 64.936 43.291">
+        <g id="Group_148" data-name="Group 148" transform="translate(-13.49 -35.135)">
+          <path id="Path_203" data-name="Path 203"
+            d="M17.2,88.091H82.137V80.876H17.2Zm0-18.037H82.137V62.839H17.2Zm0-18.038H82.137V44.8H17.2Z"
+            transform="translate(-3.711 -9.665)" fill="#0f0f0f" />
+        </g>
       </svg>
-      
+
+
+
     </div>
-    <style>
-      #loading-page {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-      }
-    
-      .loader {
-        width: 50%;
-        position: relative; /* Ensure the positioning context for absolute positioning */
-      }
-    
-      .loader img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 70%;
-        height: auto;
-        z-index: 1;
-      }
-    </style>
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          // Hide the loading page after 1 second
-          setTimeout(function() {
-              document.getElementById("loading-page").style.display = "none";
-          }, 2300);
-      });
-  </script>
-</div> -->
+    <nav>
+      <ul class="col-6">
+        <li class="home active"><a href="/main/index.html">Home</a></li>
+        <li class="exhibitions"><a href="/exhibitions/exhibitions.html">Exhibitions</a></li>
+        <li class="for-families"><a href="/for-families/index.html">For Families</a></li>
+        <li class="about"><a href="/About/index.html">About</a></li>
+        <li class="contact"><a href="/contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <div class="logo"><a href=""><img src="css/img/logo.svg" alt=""></a>
-          <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="64.936" height="43.291" viewBox="0 0 64.936 43.291">
-            <g id="Group_148" data-name="Group 148" transform="translate(-13.49 -35.135)">
-              <path id="Path_203" data-name="Path 203" d="M17.2,88.091H82.137V80.876H17.2Zm0-18.037H82.137V62.839H17.2Zm0-18.038H82.137V44.8H17.2Z" transform="translate(-3.711 -9.665)" fill="#0f0f0f"/>
-            </g>
-          </svg>
-          
-          
-          
-        </div>
-        <nav>
-            <ul class="col-6">
-                <li class="home active"><a href="/main/index.html">Home</a></li>
-                <li class="exhibitions"><a href="/exhibitions/exhibitions.html">Exhibitions</a></li>
-                <li class="for-families"><a href="/for-families/index.html">For Families</a></li>
-                <li class="about"><a href="/About/index.html">About</a></li>
-                <li class="contact"><a href="/contact/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="hero-section col-12">
-        <div class="hero-container">
-          <div id="myslider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="css/img/nanna-ditzel-hero.jpeg" alt="">
-                    <div class="carousel-caption">
-                        <h2>NANNA DITZEL</h2>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="css/img/interactive-exhibition.png" alt="">
-                    <div class="carousel-caption">
-                        <h2>INTERACTIVE EXHIBITIONS</h2>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="css/img/building-night.jpg" alt="">
-                    <div class="carousel-caption">
-                        <h2>LEARNING BY PLAYING</h2>
-                    </div>
-                </div>
+  <div data-aos="zoom-in" data-aos-once="true" class="hero-section col-12">
+    <div class="hero-container">
+      <div id="myslider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="css/img/nanna-ditzel-hero.jpeg" alt="">
+            <div class="carousel-caption">
+              <h2>NANNA DITZEL</h2>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="css/img/interactive-exhibition.png" alt="">
+            <div class="carousel-caption">
+              <h2>INTERACTIVE EXHIBITIONS</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="css/img/building-night.jpg" alt="">
+            <div class="carousel-caption">
+              <h2>LEARNING BY PLAYING</h2>
+            </div>
+          </div>
         </div>
-        
-        </div>
+      </div>
+
     </div>
-    <style>
+  </div>
+  <style>
     .hero-container {
       width: 100%;
       /* margin-top: 10px; */
@@ -129,243 +78,156 @@
       align-items: center;
       /* padding: 0 16.66%; */
     }
+
     .carousel {
-      width: 100%; /* Ensure the carousel takes the full width of the container */
-      max-width: 100%; /* Ensure the images inside the carousel do not exceed the container width */
+      width: 100%;
+      /* Ensure the carousel takes the full width of the container */
+      max-width: 100%;
+      /* Ensure the images inside the carousel do not exceed the container width */
     }
-    
+
     .carousel-item img {
-      width: 100%; /* Make sure the images inside the carousel take the full width */
-      height: 700px; /* Maintain aspect ratio */
+      width: 100%;
+      /* Make sure the images inside the carousel take the full width */
+      height: 700px;
+      /* Maintain aspect ratio */
       object-fit: cover;
     }
-    
+
     .carousel-caption {
       background-color: white;
-      width: 60%; /* Set the desired width */
-      margin: 0 auto; /* Center the caption horizontally */
-      text-align: center; /* Center the text within the caption */
+      width: 60%;
+      /* Set the desired width */
+      margin: 0 auto;
+      /* Center the caption horizontally */
+      text-align: center;
+      /* Center the text within the caption */
     }
-    .carousel-caption > h2 {
+
+    .carousel-caption>h2 {
       font-size: 70px;
       font-family: 'Open Sans', sans-serif;
       font-weight: 800;
       color: #0f0f0f;
-      max-width: 100%; /* Set a maximum width to prevent overflow */
+      max-width: 100%;
+      /* Set a maximum width to prevent overflow */
       overflow-wrap: break-word;
-    }</style>
+    }
+  </style>
 
-   
 
-    <svg class="yellow-blob" id="Group_129" data-name="Group 129" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="436.939" height="754.303" viewBox="0 0 436.939 754.303">
-        <defs>
-          <clipPath id="clip-path">
-            <rect id="Rectangle_243" data-name="Rectangle 243" width="436.939" height="754.303" fill="#F9C411"/>
-          </clipPath>
-        </defs>
-        <g id="Group_128" data-name="Group 128" clip-path="url(#clip-path)">
-          <path id="Path_198" data-name="Path 198" d="M401.964,237.117c-42.406-90.736-121.488-160.036-223.7-201.229C122.312,13.367,59.443-.752,0,.031V711.3c56.132,31.569,116.011,48.981,172.884,41.128,100.817-13.917,192-107.34,234.752-209.979s36.89-214.624-5.672-305.333" transform="translate(-0.001 0)" fill="#F9C411"/>
-        </g>
-      </svg>
-      
-    
-      <svg class="blue-blob" id="Group_129" data-name="Group 129" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="436.939" height="754.303" viewBox="0 0 436.939 754.303">
-        <defs>
-          <clipPath id="clip-path">
-            <rect id="Rectangle_243" data-name="Rectangle 243" width="436.939" height="754.303" fill="#108CB0"/>
-          </clipPath>
-        </defs>
-        <g id="Group_128" data-name="Group 128" clip-path="url(#clip-path)">
-          <path id="Path_198" data-name="Path 198" d="M401.964,237.117c-42.406-90.736-121.488-160.036-223.7-201.229C122.312,13.367,59.443-.752,0,.031V711.3c56.132,31.569,116.011,48.981,172.884,41.128,100.817-13.917,192-107.34,234.752-209.979s36.89-214.624-5.672-305.333" transform="translate(-0.001 0)" fill="#108CB0"/>
-        </g>
-      </svg>
-      
-      
-      
-      
 
-    <!-- <div class="section-2 col-12">
-        <h2>Interact with the museum</h2>
-        <div class="boxes-container">
-        <div class="section-2-big-square col-5"></div>
-        <div class="sqaure-container">
-            <div class="section-2-small-squares col-5">
-                <div class="small-box"><h4>See</h4><img class="grayscale-effect" src="css/img/create.png" alt=""></div>
-                <div class="small-box"><h4>Learn</h4><img class="grayscale-effect" src="css/img/create.png" alt=""></div>
-                <div class="small-box"><h4>Touch</h4><img class="grayscale-effect" src="css/img/touch.png" alt=""></div>
-                <div class="small-box"><h4>Feel</h4><img class="grayscale-effect" src="css/img/create.png" alt=""></div>
-                <div class="small-box"><h4>Explore</h4><img class="grayscale-effect" src="css/img/explore.png" alt=""></div>
-                <div class="small-box"><h4>Think</h4><img class="grayscale-effect" src="css/img/think.png" alt=""></div>
-                <div class="small-box"><h4>Reflect</h4><img class="grayscale-effect" src="css/img/reflect.png" alt=""></div>
-                <div class="small-box"><h4>Create</h4><img class="grayscale-effect" src="css/img/create.png" alt=""></div>
-                <div class="small-box"><h4>Imagine</h4><img class="grayscale-effect" src="css/img/create.png" alt=""></div>
-            </div>
+  <svg class="yellow-blob" id="Group_129" data-name="Group 129" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="436.939" height="754.303" viewBox="0 0 436.939 754.303">
+    <defs>
+      <clipPath id="clip-path">
+        <rect id="Rectangle_243" data-name="Rectangle 243" width="436.939" height="754.303" fill="#F9C411" />
+      </clipPath>
+    </defs>
+    <g id="Group_128" data-name="Group 128" clip-path="url(#clip-path)">
+      <path id="Path_198" data-name="Path 198"
+        d="M401.964,237.117c-42.406-90.736-121.488-160.036-223.7-201.229C122.312,13.367,59.443-.752,0,.031V711.3c56.132,31.569,116.011,48.981,172.884,41.128,100.817-13.917,192-107.34,234.752-209.979s36.89-214.624-5.672-305.333"
+        transform="translate(-0.001 0)" fill="#F9C411" />
+    </g>
+  </svg>
+
+
+  <svg class="blue-blob" id="Group_129" data-name="Group 129" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="436.939" height="754.303" viewBox="0 0 436.939 754.303">
+    <defs>
+      <clipPath id="clip-path">
+        <rect id="Rectangle_243" data-name="Rectangle 243" width="436.939" height="754.303" fill="#108CB0" />
+      </clipPath>
+    </defs>
+    <g id="Group_128" data-name="Group 128" clip-path="url(#clip-path)">
+      <path id="Path_198" data-name="Path 198"
+        d="M401.964,237.117c-42.406-90.736-121.488-160.036-223.7-201.229C122.312,13.367,59.443-.752,0,.031V711.3c56.132,31.569,116.011,48.981,172.884,41.128,100.817-13.917,192-107.34,234.752-209.979s36.89-214.624-5.672-305.333"
+        transform="translate(-0.001 0)" fill="#108CB0" />
+    </g>
+  </svg>
+
+
+
+
+  <div data-aos="zoom-in" data-aos-once="true" class="section-8 col-12">
+    <h2>INTERACT WITH THE MUSEUM</h2>
+    <div data-aos="zoom-in" data-aos-once="true" class="eight-boxes-container">
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/see.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">SEE</p>
         </div>
-        </div>  
-    </div> -->
-
-    <div class="section-8 col-12">
-        <h2>INTERACT WITH THE MUSEUM</h2>
-    <div class="eight-boxes-container">
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/see.png" alt=""><div class="overlay"><p class="exhb-text">SEE</p></div></div>
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/learn.png" alt=""><div class="overlay"><p class="exhb-text">LEARN</p></div></div>
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/touch.png" alt=""><div class="overlay"><p class="exhb-text">TOUCH</p></div></div>
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/feel.png" alt=""><div class="overlay"><p class="exhb-text">FEEL</p></div></div> 
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/explore.png" alt=""><div class="overlay"><p class="exhb-text">EXPLORE</p></div></div>
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/think.png" alt=""><div class="overlay"><p class="exhb-text">THINK</p></div></div>
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/create.png" alt=""><div class="overlay"><p class="exhb-text">CREATE</p></div></div>
-        <div data-aos="zoom-in" class="box-section-8"><img src="css/img/imagine.png" alt=""><div class="overlay"><p class="exhb-text">IMAGINE</p></div></div>  
-    </div>
-    </div>
-    
- 
-
-    <div class="section-3 col-12">
-        <h2>MUSEUM FACILITIES</h2>
-        <div class="wide-boxes-container">
-        <div class="wide-box"><img src="css/img/cafe.png" alt=""></div>
-        <div class="wide-box"><img src="css/img/design-shop.jpg" alt=""></div>
-        </div>
-    </div>
-
-    <div class="section-4 col-12">
-        <h2>SHARE YOUR ADVENTURE WITH US</h2>
-    <div class="mid-boxes-container">
-        <div class="mid-box"><img src="css/img/create.png" alt=""></div>
-        <div class="mid-box"><img src="css/img/create.png" alt=""></div>
-        <div class="mid-box"><img src="css/img/create.png" alt=""></div>
-        <div class="mid-box"><img src="css/img/create.png" alt=""></div>
-    </div>
-    </div>
-
-    
-
-    <!-- <div class="section-5 col-12">
-        <h2>WHAT'S ON</h2>
-    <div class="square-box-33-container">
-        <div class="square-box-33"></div>
-        <div class="square-box-33"></div>
-        <div class="square-box-33"></div>
-    </div>
-    </div> -->
-
-    
-
-    <!-- <div class="section-6 col-12">
-        <div class="large-grid">
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/18.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/17.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/16.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/15.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/14.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/13.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/12.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/11.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/10.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/9.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/8.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/7.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/6.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/5.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/4.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/3.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/2.jpg" alt=""></div>
-            <div class="small-box-v0"><img class="grayscale-effect" src="css/img/building-night/1.jpg" alt=""></div>
-        </div>
-    </div> -->
-
-
-    
-    
-
-
-    <!-- <script>
-        const images = document.querySelectorAll('.grayscale-effect');
-  
-        function randomizeGrayscale() {
-          images.forEach(image => {
-            const randomValue = Math.random() * 100; // Generate a random value between 0 and 100
-            image.style.filter = `grayscale(${randomValue}%)`;
-          });
-        }
-  
-        setTimeout(() => {
-          const intervalId = setInterval(() => {
-            randomizeGrayscale(); // Randomize grayscale every 1/3 seconds
-          }, 333);
-  
-          setTimeout(() => {
-            clearInterval(intervalId);
-  
-            images.forEach(image => {
-              image.style.filter = 'grayscale(0%)'; // Set grayscale to 0% after 4 seconds
-            });
-          }, 4000);
-        }, 0);
-      </script> -->
-
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    <footer>
-    <div class="footer-part1">
-        <p>Address</p>
-        <p>Trapholt</p>
-        <p>Æblehaven 23</p>
-        <p>6000 Kolding</p>
-        <p>Denmark</p>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/learn.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">LEARN</p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/touch.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">TOUCH</p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/feel.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">FEEL</p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/explore.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">EXPLORE</p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/think.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">THINK</p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/create.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">CREATE</p>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-once="true" class="box-section-8"><img src="css/img/imagine.png" alt="">
+        <div class="overlay">
+          <p class="exhb-text">IMAGINE</p>
+        </div>
+      </div>
     </div>
-    <div class="footer-part2">
-        <p>Contact</p>
-        <p>Telephone</p>
-        <p>+45 76 30 05 30</p>
-        <p>E-mail</p>
-        <p>kunstmuseum@trapholt.dk</p>
+  </div>
+
+
+  <div data-aos="zoom-in" data-aos-once="true" class="section-3 col-12">
+    <h2>MUSEUM FACILITIES</h2>
+    <div data-aos="zoom-in" data-aos-once="true" class="wide-boxes-container">
+      <div data-aos="zoom-in" data-aos-once="true" class="wide-box"><img src="css/img/cafe.png" alt=""></div>
+      <div data-aos="zoom-in" data-aos-once="true" class="wide-box"><img src="css/img/design-shop.jpg" alt=""></div>
     </div>
-    <div class="footer-part3">
-        <p>Opening hours</p>
-        <p>Tuesday - Sunday:</p>
-        <p>10.00 - 17.00</p>
-        <p>Wednesday:</p>
-        <p>10.00 - 21.00</p>
-        <p>Monday: Closed</p>
+  </div>
+
+  <div data-aos="zoom-in" data-aos-once="true" class="section-4 col-12">
+    <h2>SHARE YOUR ADVENTURE WITH US</h2>
+    <div data-aos="zoom-in" data-aos-once="true" class="mid-boxes-container">
+      <div data-aos="zoom-in" data-aos-once="true" class="mid-box"><img src="css/img/create.png" alt=""></div>
+      <div data-aos="zoom-in" data-aos-once="true" class="mid-box"><img src="css/img/create.png" alt=""></div>
+      <div data-aos="zoom-in" data-aos-once="true" class="mid-box"><img src="css/img/create.png" alt=""></div>
+      <div data-aos="zoom-in" data-aos-once="true" class="mid-box"><img src="css/img/create.png" alt=""></div>
     </div>
-    <div class="footer-part4">
-        <p>Follow us</p>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>YouTube</p>
-        <p>LinkedIn</p>
-        <p>Tripadvisor</p>
+  </div>
+
+
+
+
+  <footer>
+    <div class="container">
+      <p class="m-0 text-center text-white">Trapholt Museum</p>
     </div>
-    <div class="footer-part5">
-        <p>Newsletter</p>
-        <p>Sign up for our newsletter</p>
-        <p>Sign up</p>
-    </div>
-    </footer>
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
