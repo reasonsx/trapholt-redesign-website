@@ -201,7 +201,6 @@ nav li a:hover {
 .middle-text {
   color: white;
 }
-
 .activity-img {
   width: 600px;
   height: 600px;
@@ -210,10 +209,12 @@ nav li a:hover {
   margin: 0;
   overflow: hidden;
 }
+
 .activity-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* or use object-fit: fill; depending on your preference */
 }
 
 .footer {
@@ -274,8 +275,25 @@ nav li a:hover {
 .custom-shape-divider-bottom-1702314374 .shape-fill {
   fill: #fafafa;
 }
-@media (max-width: 676px) {
+@media (max-width: 769px) {
   .carousel-caption > h2 {
     font-size: 36px; /* Small screens */
+  }
+  .heading > h1 {
+    font-size: 30px;
+  }
+  .activity-img {
+    width: 100%; /* Set width to 100% for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .activity-text {
+    margin: 10px;
+  }
+  .activity-text h1 {
+    font-size: 24px;
+  }
+  .activity-text p {
+    font-size: 14px;
   }
 }
