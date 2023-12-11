@@ -177,10 +177,10 @@ nav li:hover a{
 
 
 .box-section-8:nth-child(1) {
-    background-color: #108CB0;
+    background-color: #E33877;
 }
 .box-section-8:nth-child(2) {
-    background-color: #E33877;
+    background-color: #108CB0;
 }
 .box-section-8:nth-child(3) {
     background-color: #EE709E;
@@ -195,10 +195,10 @@ nav li:hover a{
     background-color: #107F00;
 }
 .box-section-8:nth-child(1):hover {
-    background-color: #108CB0;
+    background-color: #E33877;
 }
 .box-section-8:nth-child(2):hover {
-    background-color: #E33877;
+    background-color: #108CB0;
 }
 .box-section-8:nth-child(3):hover {
     background-color: #EE709E;
