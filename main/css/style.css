@@ -2,22 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
+  /* Firefox */
+  * {
     scrollbar-width: auto;
-    scrollbar-color: #e33877 #fafafa;
-}
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 16px;
-}
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-*::-webkit-scrollbar-thumb {
-    background-color: #e33877;
-    border-radius: 0px;
-}
+    scrollbar-color: #0f0f0f #fafafa;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f;
+    border: 4px solid #fafafa;
+    border-radius: 8px;
+  }
+
 body {
     margin: 0;
     padding: 0;
