@@ -143,20 +143,13 @@ nav li a:hover {
 }
 
 .carousel-caption > h2 {
-  font-size: 70px;
+  font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   color: #0f0f0f;
   max-width: 100%;
   /* Set a maximum width to prevent overflow */
   overflow-wrap: break-word;
-}
-
-@media (max-width: 676px) {
-  .carousel-caption > h2 {
-    font-size: 36px;
-    /* Small screens */
-  }
 }
 
 .row {
@@ -180,63 +173,81 @@ nav li a:hover {
 }
 
 .section-1,
+.section-2,
 .section-3 {
   background-color: #e33877;
-  border-radius: 7px;
   position: relative;
   margin: 10px;
   padding: 0;
   width: 100vw;
 }
 
-.section-2 {
-  background-color: #ffffff;
-  position: relative;
-  width: 100vw;
-}
-
-.middle-text {
-  color: black;
-}
-
 .activity-text {
   color: white;
-  margin: 0 40px 0 40px;
-  padding: 80px;
+  margin: 100px;
   text-align: left;
+}
+.activity-text > p {
+  text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .activity-text > h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
 }
-
-.middle-text {
-  color: #0f0f0f;
-}
-
 .activity-img {
   width: 600px;
-  height: 500px;
+  height: 600px;
   display: flex;
-
+  position: relative;
   margin: 0;
-  border-radius: 7px;
   overflow: hidden;
 }
 
 .activity-img img {
   width: 100%;
   height: 100%;
+  position: relative;
   object-fit: cover;
   /* or use object-fit: fill; depending on your preference */
 }
 
-.custom-shape-divider-bottom-1701519349 {
+.btn {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #0f0f0f;
+  color: white;
+  border: 1px solid white;
+}
+
+.custom-shape-divider-top-1702321708 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1702321708 svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 118px;
+}
+
+.custom-shape-divider-top-1702321708 .shape-fill {
+  fill: #fafafa;
+}
+
+.custom-shape-divider-bottom-1702321908 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -246,33 +257,36 @@ nav li a:hover {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1701519349 svg {
+.custom-shape-divider-bottom-1702321908 svg {
   position: relative;
   display: block;
-  width: calc(147% + 1.3px);
-  height: 155px;
+  width: calc(137% + 1.3px);
+  height: 118px;
 }
 
-.custom-shape-divider-bottom-1701519349 .shape-fill {
-  fill: #ffffff;
+.custom-shape-divider-bottom-1702321908 .shape-fill {
+  fill: #fafafa;
 }
 
-.custom-shape-divider-top-1701531289 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
+@media (max-width: 769px) {
+  .carousel-caption > h2 {
+    font-size: 36px; /* Small screens */
+  }
+  .heading > h1 {
+    font-size: 30px;
+  }
+  .activity-img {
+    width: 100%; /* Set width to 100% for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
 
-.custom-shape-divider-top-1701531289 svg {
-  position: relative;
-  display: block;
-  width: calc(113% + 1.3px);
-  height: 121px;
-}
-
-.custom-shape-divider-top-1701531289 .shape-fill {
-  fill: #ffffff;
+  .activity-text {
+    margin: 15px;
+  }
+  .activity-text h1 {
+    font-size: 24px;
+  }
+  .activity-text p {
+    font-size: 14px;
+  }
 }
