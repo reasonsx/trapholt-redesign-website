@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #0f0f0f #fafafa;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #0f0f0f #fafafa;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #fafafa;
-  }
+*::-webkit-scrollbar-track {
+  background: #fafafa;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #0f0f0f;
-    border: 4px solid #fafafa;
-    border-radius: 8px;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f;
+  border: 4px solid #fafafa;
+  border-radius: 8px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -35,10 +35,10 @@ h2 {
   font-weight: 700;
   padding: 0;
   color: #0f0f0f;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 
   @media screen and (max-width: 768px) {
-      font-size: 48px;
+    font-size: 48px;
   }
 }
 .top-blob {
@@ -58,7 +58,6 @@ h2 {
   width: auto;
   z-index: -1;
   transform: scaleY(-1); /* Horizontal flip */
-  
 }
 .right-blob {
   position: absolute;
@@ -107,7 +106,7 @@ nav li a {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
 }
-nav li.active a {               
+nav li.active a {
   border-bottom: 3px solid #0f0f0f;
 }
 nav li a:hover {
@@ -150,8 +149,8 @@ nav li a:hover {
 }
 .carousel-caption > h2 {
   font-size: 70px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
   color: #0f0f0f;
   max-width: 100%; /* Set a maximum width to prevent overflow */
   overflow-wrap: break-word;
@@ -188,63 +187,44 @@ nav li a:hover {
 }
 
 .section-2 {
-  background-color: #fafafa;
   position: relative;
+  background-color: green;
+
   margin: 0;
   padding: 0;
   width: 100vw;
 }
-.activity-img {
-  width: 600px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  border-radius: 7px;
-  overflow: hidden;
-}
 
 .activity-text {
   color: white;
-  margin: 40px;
-
+  margin: 100px;
   text-align: left;
+}
+.activity-text > p {
+  text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .activity-text > h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
 }
 .middle-text {
-  color: #0f0f0f;
+  color: white;
 }
+
 .middle-img {
-  margin-left: 90px;
-}
-.activity-img {
-  width: 600px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  border-radius: 7px;
-  overflow: hidden;
+  justify-content: end;
+  align-items: end;
 }
 
 .activity-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* or use object-fit: fill; depending on your preference */
-}
-
-.collage2 {
-  margin-top: 55px;
+  object-fit: cover;
 }
 
 .custom-shape-divider-bottom-1701722040 {
@@ -288,7 +268,9 @@ nav li a:hover {
   fill: #fafafa;
 }
 
-footer {
+.footer {
   height: 300px;
   background-color: #e2e2e2;
+  margin: 0;
+  padding: 0;
 }
