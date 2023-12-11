@@ -284,6 +284,11 @@ nav li a:hover {
   .activity-img {
     width: 100%; /* Set width to 100% for smaller screens */
     height: auto; /* Maintain aspect ratio */
+    overflow: hidden;
+  }
+
+  .activity-img img {
+    overflow: hidden;
   }
 
   .activity-text {
