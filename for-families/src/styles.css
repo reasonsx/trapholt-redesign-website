@@ -216,11 +216,6 @@ nav li a:hover {
   color: white;
 }
 
-.middle-img {
-  justify-content: end;
-  align-items: end;
-}
-
 .activity-img img {
   width: 100%;
   height: 100%;

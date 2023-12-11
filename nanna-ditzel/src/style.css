@@ -180,23 +180,13 @@ nav li a:hover {
 }
 
 .section-1,
+.section-2,
 .section-3 {
   background-color: #e33877;
-  border-radius: 7px;
   position: relative;
   margin: 10px;
   padding: 0;
   width: 100vw;
-}
-
-.section-2 {
-  background-color: #ffffff;
-  position: relative;
-  width: 100vw;
-}
-
-.middle-text {
-  color: black;
 }
 
 .activity-text {
@@ -215,17 +205,12 @@ nav li a:hover {
   font-weight: 800;
 }
 
-.middle-text {
-  color: #0f0f0f;
-}
-
 .activity-img {
   width: 600px;
   height: 500px;
   display: flex;
 
   margin: 0;
-  border-radius: 7px;
   overflow: hidden;
 }
 
