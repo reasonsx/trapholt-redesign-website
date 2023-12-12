@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #0f0f0f;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+/* header {
+  width: auto;
+  height: auto;
+  padding: 24px 0 0 0;
+}
+.logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+ 
+}
+nav {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  padding: 0 25%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+nav li a {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+} */
+.hero-section {
+  /* background-color: red; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8.33%;
+  margin: 24px 0 0 0;
+}
+.hero-container {
+  background-color: black;
+  width: 100%;
+  padding-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 16.66%; */
+}
+.heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.section-1,
+.section-3 {
+  background-color: #f9c411;
+  border-radius: 7px;
+  position: relative;
+  margin: 10px;
+  padding: 0;
+  width: 100vw;
+}
+
+.section-2 {
+  background-color: #fafafa;
+  position: relative;
+  width: 100vw;
+}
+.activity-img {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 7px;
+}
+.activity-text {
+  color: black;
+  margin: 0 40px 0 40px;
+  padding: 80px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.activity-text > h1 {
+  font-size: 45px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+
+.activity-img img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.collage2 {
+  margin-top: 55px;
+}
+
+.custom-shape-divider-bottom-1701722040 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1701722040 svg {
+  position: relative;
+  display: block;
+  width: calc(142% + 1.3px);
+  height: 119px;
+}
+
+.custom-shape-divider-bottom-1701722040 .shape-fill {
+  fill: #fafafa;
+}
+
+.custom-shape-divider-top-1701720191 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1701720191 svg {
+  position: relative;
+  display: block;
+  width: calc(154% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1701720191 .shape-fill {
+  fill: #fafafa;
+}
+
+footer {
+  height: 300px;
+  background-color: #e2e2e2;
+}
