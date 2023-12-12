@@ -173,6 +173,10 @@ nav li:hover a{
 .box-section-8:not(:hover) .overlay {
     opacity: 1;
     transition: all 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+       width: 92%;
+         bottom: 4%; 
+    }
 }
 
 
@@ -244,6 +248,16 @@ nav li:hover a{
     top: 0;
     left: 0;
     transition: all 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+        width: 92%;
+        height: 92%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        top: 4%;
+        left: 4%;
+        
+    }
 }
 
 
@@ -306,7 +320,7 @@ nav li:hover a{
 }
 
 footer {
-    background-color: #fafafa;
+    background-color: transparent;
     height: auto;
     width: 100%;
     display: flex;

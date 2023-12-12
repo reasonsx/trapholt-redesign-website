@@ -53,6 +53,9 @@ body {
     height: 80%;
     width: auto;
     z-index: -1;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 .blob-3 {
     position: absolute;
@@ -223,6 +226,10 @@ nav li a:hover {
 .wide-box:not(:hover) .overlay {
     /* opacity: 0; */
     transition: all 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+        width: 96%;
+        bottom: 4%;
+    }
 }
 
 .wide-box:nth-child(1) {
@@ -271,6 +278,16 @@ nav li a:hover {
     top: 0;
     left: 0;
     transition: all 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+        width: 96%;
+        height: 92%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        top: 4%;
+        left: 2%;
+        
+    }
 }
 
 .social-media-section {
@@ -436,6 +453,11 @@ nav li a:hover {
 .box-section-8:not(:hover) .overlay {
     /* opacity: 0; */
     transition: all 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+        width: 92%;
+        bottom: 4%;
+        
+    }
 }
 
 .eight-boxes-container {
@@ -582,6 +604,16 @@ nav li a:hover {
     top: 0;
     left: 0;
     transition: all 0.5s ease-out;
+    @media screen and (max-width: 768px) {
+        width: 92%;
+        height: 92%;
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        top: 4%;
+        left: 4%;
+        
+    }
 }
 
 footer {
