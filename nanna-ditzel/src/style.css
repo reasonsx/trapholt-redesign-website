@@ -133,7 +133,7 @@ nav li a:hover {
 }
 
 .carousel-caption {
-  background-color: white;
+  background-color: #fafafa;
   width: 60%;
   /* Set the desired width */
   margin: 0 auto;
@@ -183,7 +183,7 @@ nav li a:hover {
 }
 
 .activity-text {
-  color: white;
+  color: #fafafa;
   margin: 100px;
   text-align: left;
 }
@@ -223,8 +223,8 @@ nav li a:hover {
 
 .btn:hover {
   background-color: #0f0f0f;
-  color: white;
-  border: 1px solid white;
+  color: #fafafa;
+  border: 1px solid #fafafa;
 }
 
 .custom-shape-divider-top-1702321708 {
@@ -263,7 +263,6 @@ nav li a:hover {
   width: calc(137% + 1.3px);
   height: 118px;
 }
-
 .custom-shape-divider-bottom-1702321908 .shape-fill {
   fill: #fafafa;
 }
@@ -291,7 +290,7 @@ nav li a:hover {
   }
 }
 footer {
-  background-color: #fafafa;
+  background-color: transparent;
   height: auto;
   width: 100%;
   display: flex;

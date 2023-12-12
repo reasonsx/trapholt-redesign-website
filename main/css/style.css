@@ -65,7 +65,7 @@ body {
     width: auto;
     z-index: -1;
 }
-.yellow-blob {
+/* .yellow-blob {
     position: absolute;
     left: 0;
     top: 96px;
@@ -82,8 +82,7 @@ body {
     width: auto;
     z-index: -1;
     rotate: 180deg;
-    /* opacity: 0.9; */
-}
+} */
 
 h2 {
     font-size: 64px;
@@ -93,7 +92,7 @@ h2 {
     font-family: 'Work Sans', sans-serif;
 
     @media screen and (max-width: 768px) {
-        font-size: 48px;
+        font-size: 40px;
     }
 }
 
@@ -177,6 +176,59 @@ nav li a:hover {
     padding: 0 8.33%;
     margin: 1.5% 0 2.5% 0;
 }
+.hero-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel {
+    width: 100%;
+    /* Ensure the carousel takes the full width of the container */
+    max-width: 100%;
+    /* Ensure the images inside the carousel do not exceed the container width */
+  }
+
+  .carousel-item img {
+    width: 100%; /* Make sure the images inside the carousel take the full width */
+    height: 700px;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .carousel-caption {
+    background-color: #fafafa;
+    width: 60%; /* Set the desired width */
+    margin: 0 auto; /* Center the caption horizontally */
+    text-align: center; /* Center the text within the caption */
+  }
+
+  .carousel-caption>h2 {
+    font-size: 64px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    color: #0f0f0f;
+    max-width: 100%; /* Set a maximum width to prevent overflow */
+    overflow-wrap: break-word;
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .facilities-section {
     height: auto;
@@ -421,13 +473,14 @@ nav li a:hover {
     background: rgba(0, 0, 0, 0.5);
     /* Black see-through */
     color: #fafafa;
+    align-items: center;
     width: calc(100% - 16px);
     /* justify-content: center; */
     /* align-items: center; */
 }
 .overlay p {
     /* padding-left: 5%; */
-    padding-top: 5%;
+    padding-top: 1rem;
     font-size: 48px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
