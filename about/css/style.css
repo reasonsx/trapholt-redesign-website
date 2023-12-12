@@ -124,10 +124,24 @@ nav li a:hover {
 .contact:hover {
     background-color: #E33877;
 } */
-
-
 .hero-section {
-    /* background-color: #F9C411; */
+    margin: 1.5% 0 2.5% 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8.33%;
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+}
+.hero-section img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* .hero-section {
     height: auto;
     display: flex;
     justify-content: center;
@@ -142,7 +156,7 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .section-2 {
     height: auto;
     display: flex;
