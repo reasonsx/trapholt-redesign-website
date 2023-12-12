@@ -39,6 +39,12 @@ body {
     width: auto;
     rotate: 180deg;
     z-index: -1;
+    @media screen and (max-width: 768px) {
+        width: 80%;  
+        height: auto;
+        top: 8px;
+        left:8px;      
+    }
 }
 .blob-2 {
     position: absolute;
@@ -300,7 +306,7 @@ nav li a:hover {
         padding-top: 48%;
         
     }
-    animation: scrollMidBoxes 30s linear infinite; /* Makes the boxes to be moving for 20s */
+    animation: scrollMidBoxes 50s linear infinite; /* Makes the boxes to be moving for 20s */
 }
 @keyframes scrollMidBoxes {
     0%, 100% {
@@ -579,26 +585,93 @@ nav li a:hover {
 }
 
 footer {
-    background-color: #e2e2e2;
+    background-color: #fafafa;
     height: auto;
     width: 100%;
     display: flex;
     padding: 1.25% 8.33%;
+    margin-top: 2.5%;
     justify-content: space-between;
+  
 }
+.footer-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25% 0;
+    border-top: #0f0f0f 3px solid;
+    border-bottom: #0f0f0f 3px solid;
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+}
 .footer-part1 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+.footer-part2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+}
+.footer-part3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+}
+.footer-part-4 {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+.footer-part-5 {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
-
-
+.buy-ticket {
+    margin-top: 8px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 8px;
+    }
+}
+.buy-ticket a {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    color: #107F00;
+    text-decoration: none;
+    border-bottom: #107F00 4px solid;
+}
+.buy-ticket a:hover {
+    color: #E33877;
+    border-bottom: #E33877 4px solid;
+}
 footer p {
-    color: #0f0f0f;
-    font-size: 18px;
+    color: #0f0f0f ;
+    font-size: 16px;
     font-weight: 400;
     margin: 0;
     padding: 0;
@@ -607,6 +680,6 @@ footer p {
 
 footer p:nth-child(1) {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Work Sans', sans-serif;
 }
