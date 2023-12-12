@@ -30,6 +30,19 @@ body {
     display: flex;
     flex-direction: column;
 }
+.yellow-blob{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+}
+
+.blue-blob{
+    position: absolute;
+    left: 0;
+    top: 180px;
+    z-index: -1;
+}
 h2 {
     font-size: 64px;
     font-weight: 700;
@@ -84,24 +97,34 @@ nav li.active a {
 nav li a:hover {
     border-bottom: 3px solid #0f0f0f;
 }
-/* .exhibitions:hover {
-    background-color: #108CB0;
+.hero-section {
+    margin: 1.5% 0 2.5% 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8.33%;
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
 }
-.for-families:hover {
-    background-color: #107F00;
+.hero-section img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
 }
-.about:hover {
-    background-color: #ED6915;
+.container-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 8.33%;
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+
 }
-.contact:hover {
-    background-color: #E33877;
-}
-.contact {
-    background-color: #E33877;
-}
-.contact a {
-    color: #fafafa;
-} */
 
 .heading{
     font-family: 'Work Sans', sans-serif;
@@ -116,19 +139,7 @@ p{
     font-weight: 400;
 }
 
-.yellow-blob{
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-}
 
-.blue-blob{
-    position: absolute;
-    left: 0;
-    top: 1600px;
-    z-index: -1;
-}
 
 .text {
     display: flex;
