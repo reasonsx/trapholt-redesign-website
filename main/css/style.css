@@ -118,22 +118,21 @@ header {
 .hamburger-menu {
     height: 48px;
     width: auto;
-    align-self: flex-end;
+    align-self: center;
     display: none;
-
+    cursor: pointer;
     @media screen and (max-width: 768px) {
         display: block;
     }
 }
 
+
 nav {
     width: auto;
     height: auto;
     padding: 0 8.33%;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
@@ -142,6 +141,10 @@ nav ul {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;        
+    }
 }
 
 nav li a {
