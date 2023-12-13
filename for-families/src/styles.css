@@ -131,30 +131,35 @@ nav li a:hover {
   /* padding: 0 16.66%; */
 }
 .carousel {
-  width: 100%; /* Ensure the carousel takes the full width of the container */
-  max-width: 100%; /* Ensure the images inside the carousel do not exceed the container width */
+  width: 100%;
+  /* Ensure the carousel takes the full width of the container */
+  max-width: 100%;
+  /* Ensure the images inside the carousel do not exceed the container width */
 }
 
 .carousel-item img {
   width: 100%; /* Make sure the images inside the carousel take the full width */
-  height: 700px; /* Maintain aspect ratio */
-  object-fit: cover;
+  height: 700px;
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 .carousel-caption {
-  background-color: white;
+  background-color: #fafafa;
   width: 60%; /* Set the desired width */
   margin: 0 auto; /* Center the caption horizontally */
   text-align: center; /* Center the text within the caption */
-  padding: 5px;
 }
-.carousel-caption > h2 {
-  font-size: 70px;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 900;
+
+.carousel-caption>h2 {
+  font-size: 64px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
   color: #0f0f0f;
   max-width: 100%; /* Set a maximum width to prevent overflow */
   overflow-wrap: break-word;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .heading > h1 {
