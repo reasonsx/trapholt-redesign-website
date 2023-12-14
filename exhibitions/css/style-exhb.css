@@ -35,7 +35,7 @@ body {
 p {
     font-size: 16px;
     @media screen and (max-width: 768px) {
-        font-size: 12px;
+        font-size: 8px;
         
     }
 }
@@ -325,6 +325,7 @@ display: none;
     /* Black see-through */
     color: #f1f1f1;
     width: calc(100% - 16px);
+
 }
 
 .exhb-text {
