@@ -222,9 +222,9 @@ nav li a:hover {
 }
 
 .btn:hover {
-  background-color: #0f0f0f;
-  color: #fafafa;
-  border: 1px solid #fafafa;
+  background-color: #0f0f0f !important;
+  color: #fafafa !important;
+  border: 1px solid #fafafa !important;
 }
 .custom-shape-divider-top-1702321708 {
   fill: #fafafa;
