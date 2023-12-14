@@ -44,6 +44,9 @@ p {
     right: 0;
     top: 60%;
     z-index: -1;
+    @media screen and (max-width: 768px) {
+        top: 160px;
+    }
 }
 
 .blue-blob {
@@ -51,6 +54,9 @@ p {
     left: 0;
     top: 1200px;
     z-index: -1;
+    @media screen and (max-width: 768px) {
+display: none;        
+    }
 }
 
 h2 {
