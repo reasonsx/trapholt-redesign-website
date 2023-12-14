@@ -588,7 +588,7 @@ nav li a:hover {
 
     @media screen and (max-width: 768px) {
         flex: 0 0 50%;
-        /* 48% width for each mid-box */
+        /* 50% width for each mid-box */
         width: 50%;
         padding-top: 50%;
 
@@ -598,16 +598,19 @@ nav li a:hover {
     /* Makes the boxes to be moving for 20s */
 }
 
+/* Define a keyframe animation named 'scrollMidBoxes' */
 @keyframes scrollMidBoxes {
 
-    0%,
-    100% {
+    /* At the start (0%) and end (100%) of the animation */
+    0%, 100% {
+        /* Reset the horizontal translation to the initial position */
         transform: translateX(0);
     }
 
+    /* At the midpoint of the animation (50%) */
     50% {
+        /* Translate the element horizontally to the left by 25% multiplied by 7 */
         transform: translateX(calc(-25% * 7));
-        /* will add comment here later */
     }
 }
 
