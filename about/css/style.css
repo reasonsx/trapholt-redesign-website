@@ -790,7 +790,9 @@ footer p:nth-child(1) {
     flex-direction: column;
     align-items: flex-start;
 }
-
+.footer-part-4 a {
+    color: #0f0f0f;
+}
 .footer-part-5 {
     height: 100%;
     width: auto;

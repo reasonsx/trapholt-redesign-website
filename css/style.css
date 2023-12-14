@@ -691,7 +691,15 @@ nav li a:hover {
     transition: all 0.5s ease-out;
 }
 
+.social-p {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+    color: #0f0f0f;
+    margin: 0 0 1.25% 0;
+    padding: 0;
 
+}
 
 footer {
     background-color: #fafafa;
@@ -773,6 +781,9 @@ footer p:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.footer-part-4 a {
+    color: #0f0f0f;
 }
 
 .footer-part-5 {
