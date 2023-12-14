@@ -26,7 +26,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #fafafa !important;
   color: #0f0f0f;
   font-family: "Open Sans", sans-serif;
   display: flex;
