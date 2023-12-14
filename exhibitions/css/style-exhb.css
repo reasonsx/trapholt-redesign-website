@@ -32,18 +32,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 p {
     font-size: 16px;
+
     @media screen and (max-width: 768px) {
         font-size: 8px;
-        
+
     }
 }
+
 .yellow-blob {
     position: absolute;
     right: 0;
     top: 60%;
     z-index: -1;
+
     @media screen and (max-width: 768px) {
         top: 160px;
     }
@@ -54,8 +58,9 @@ p {
     left: 0;
     top: 1200px;
     z-index: -1;
+
     @media screen and (max-width: 768px) {
-display: none;        
+        display: none;
     }
 }
 
@@ -102,9 +107,10 @@ nav ul {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+
     @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
 }
 
@@ -143,13 +149,15 @@ nav li:hover a {
     justify-content: center;
     align-items: center;
 }
+
 .hero-container .hero-nanna {
     width: 100%;
     height: auto;
     display: none;
+
     @media screen and (max-width: 768px) {
         display: block;
-        
+
     }
 }
 
@@ -157,8 +165,9 @@ nav li:hover a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     @media screen and (max-width: 768px) {
-display: none;        
+        display: none;
     }
 }
 
@@ -168,6 +177,7 @@ display: none;
     filter: grayscale(0%);
     transition: 0.5s;
 }
+
 .small-img-hero:hover {
     filter: grayscale(100%);
 }
@@ -190,6 +200,7 @@ display: none;
     grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     row-gap: 1rem;
+
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);

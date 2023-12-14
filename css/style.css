@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -31,6 +32,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .blob-1 {
     position: absolute;
     left: 15px;
@@ -39,13 +41,15 @@ body {
     width: auto;
     rotate: 180deg;
     z-index: -1;
+
     @media screen and (max-width: 768px) {
-        width: 80%;  
+        width: 80%;
         height: auto;
         top: 8px;
-        left:8px;      
+        left: 8px;
     }
 }
+
 .blob-2 {
     position: absolute;
     right: 30px;
@@ -53,10 +57,12 @@ body {
     height: 80%;
     width: auto;
     z-index: -1;
+
     @media screen and (max-width: 768px) {
         display: none;
     }
 }
+
 .blob-3 {
     position: absolute;
     left: 50px;
@@ -65,6 +71,7 @@ body {
     width: auto;
     z-index: -1;
 }
+
 /* .yellow-blob {
     position: absolute;
     left: 0;
@@ -121,6 +128,7 @@ header {
     align-self: center;
     display: none;
     cursor: pointer;
+
     @media screen and (max-width: 768px) {
         display: block;
     }
@@ -141,9 +149,10 @@ nav ul {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+
     @media screen and (max-width: 768px) {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
 }
 
@@ -175,47 +184,55 @@ nav li a:hover {
     padding: 0 8.33%;
     margin: 1.5% 0 2.5% 0;
 }
+
 .hero-container {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .carousel {
+.carousel {
     width: 100%;
     /* Ensure the carousel takes the full width of the container */
     max-width: 100%;
     /* Ensure the images inside the carousel do not exceed the container width */
-  }
+}
 
-  .carousel-item img {
-    width: 100%; /* Make sure the images inside the carousel take the full width */
+.carousel-item img {
+    width: 100%;
+    /* Make sure the images inside the carousel take the full width */
     height: 700px;
-    object-fit: cover; /* Maintain aspect ratio */
-  }
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
 
-  .carousel-caption {
+.carousel-caption {
     background-color: #fafafa;
-    width: 60%; /* Set the desired width */
-    margin: 0 auto; /* Center the caption horizontally */
-    text-align: center; /* Center the text within the caption */
-  }
+    width: 60%;
+    /* Set the desired width */
+    margin: 0 auto;
+    /* Center the caption horizontally */
+    text-align: center;
+    /* Center the text within the caption */
+}
 
-  .carousel-caption>h2 {
+.carousel-caption>h2 {
     font-size: 64px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     color: #0f0f0f;
-    max-width: 100%; /* Set a maximum width to prevent overflow */
+    max-width: 100%;
+    /* Set a maximum width to prevent overflow */
     overflow-wrap: break-word;
-    @media screen and (max-width: 768px) {
-      font-size: 40px;
-    }
-  }
 
-  .section-8 {
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+}
+
+.section-8 {
     /* background-color: green; */
     height: auto;
     display: flex;
@@ -238,17 +255,19 @@ nav li a:hover {
     /* justify-content: center; */
     /* align-items: center; */
 }
+
 .overlay p {
     /* padding-left: 5%; */
     padding-top: 1rem;
     font-size: 48px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
+
     @media screen and (max-width: 768px) {
         font-size: 32px;
-        
+
     }
-    
+
 }
 
 
@@ -266,10 +285,11 @@ nav li a:hover {
 .box-section-8:not(:hover) .overlay {
     /* opacity: 0; */
     transition: all 0.5s ease-out;
+
     @media screen and (max-width: 768px) {
         width: 92%;
         bottom: 4%;
-        
+
     }
 }
 
@@ -281,6 +301,7 @@ nav li a:hover {
     grid-template-rows: repeat(2, 1fr);
     justify-content: space-between;
     gap: 1rem;
+
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -392,6 +413,7 @@ nav li a:hover {
     top: 0;
     left: 0;
     transition: all 0.5s ease-out;
+
     @media screen and (max-width: 768px) {
         width: 92%;
         height: 92%;
@@ -400,7 +422,7 @@ nav li a:hover {
         object-fit: cover;
         top: 4%;
         left: 4%;
-        
+
     }
 }
 
@@ -431,6 +453,7 @@ nav li a:hover {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
+
     @media screen and (max-width: 768px) {
         flex-direction: column;
     }
@@ -445,14 +468,17 @@ nav li a:hover {
     overflow: hidden;
     justify-content: center;
     text-align: center;
+
     @media screen and (max-width: 768px) {
         width: 100%;
         padding-top: 50%;
     }
 }
+
 .wide-box .overlay {
     width: 100%;
 }
+
 .wide-box:hover .overlay {
     opacity: 1;
     width: 96%;
@@ -463,6 +489,7 @@ nav li a:hover {
 .wide-box:not(:hover) .overlay {
     /* opacity: 0; */
     transition: all 0.5s ease-out;
+
     @media screen and (max-width: 768px) {
         width: 96%;
         bottom: 4%;
@@ -515,6 +542,7 @@ nav li a:hover {
     top: 0;
     left: 0;
     transition: all 0.5s ease-out;
+
     @media screen and (max-width: 768px) {
         width: 96%;
         height: 92%;
@@ -523,7 +551,7 @@ nav li a:hover {
         object-fit: cover;
         top: 4%;
         left: 2%;
-        
+
     }
 }
 
@@ -541,35 +569,48 @@ nav li a:hover {
     height: auto;
     display: flex;
     justify-content: space-between;
-    overflow: hidden; /* Hide scrollbar */
+    overflow: hidden;
+    /* Hide scrollbar */
     gap: 1rem;
 }
 
 
 .mid-box {
-    flex: 0 0 24%; /* 24% width for each mid-box */
+    flex: 0 0 24%;
+    /* 24% width for each mid-box */
     position: relative;
     width: 25%;
     padding-top: 25%;
-    flex: 0 0 25%; /* keeps its a square */
+    flex: 0 0 25%;
+    /* keeps its a square */
     background-color: #0f0f0f;
     display: flex;
+
     @media screen and (max-width: 768px) {
-        flex: 0 0 50%; /* 48% width for each mid-box */
+        flex: 0 0 50%;
+        /* 48% width for each mid-box */
         width: 50%;
         padding-top: 50%;
-        
+
     }
-    animation: scrollMidBoxes 50s linear infinite; /* Makes the boxes to be moving for 20s */
+
+    animation: scrollMidBoxes 50s linear infinite;
+    /* Makes the boxes to be moving for 20s */
 }
+
 @keyframes scrollMidBoxes {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(0);
     }
+
     50% {
-        transform: translateX(calc(-25% * 7)); /* will add comment here later */
+        transform: translateX(calc(-25% * 7));
+        /* will add comment here later */
     }
 }
+
 .mid-box:nth-child(1) {
     background-color: #108CB0;
 }
@@ -585,9 +626,11 @@ nav li a:hover {
 .mid-box:nth-child(4) {
     background-color: #ED6915;
 }
+
 .mid-box:nth-child(5) {
     background-color: #107F00;
 }
+
 .mid-box:nth-child(6) {
     background-color: #F9C411;
 }
@@ -607,9 +650,11 @@ nav li a:hover {
 .mid-box:nth-child(4):hover {
     background-color: #ED6915;
 }
+
 .mid-box:nth-child(5):hover {
     background-color: #107F00;
 }
+
 .mid-box:nth-child(6):hover {
     background-color: #F9C411;
 }
@@ -657,6 +702,7 @@ footer {
     margin-top: 2.5%;
     justify-content: space-between;
 }
+
 .footer-content {
     width: 100%;
     height: auto;
@@ -665,52 +711,62 @@ footer {
     padding: 1.25% 0;
     border-top: #0f0f0f 3px solid;
     border-bottom: #0f0f0f 3px solid;
+
     @media screen and (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 footer p {
-    color: #0f0f0f ;
+    color: #0f0f0f;
     font-size: 16px;
     font-weight: 400;
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
 footer p:nth-child(1) {
     font-size: 24px;
     font-weight: 600;
     font-family: 'Work Sans', sans-serif;
 }
+
 .footer-part1 {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     @media screen and (max-width: 768px) {
         margin-right: 0;
         margin-bottom: 16px;
     }
 }
+
 .footer-part2 {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     @media screen and (max-width: 768px) {
         margin-bottom: 16px;
     }
 }
+
 .footer-part3 {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
     @media screen and (max-width: 768px) {
         margin-bottom: 16px;
     }
 }
+
 .footer-part-4 {
     height: 100%;
     width: auto;
@@ -718,6 +774,7 @@ footer p:nth-child(1) {
     flex-direction: column;
     align-items: flex-start;
 }
+
 .footer-part-5 {
     height: 100%;
     width: auto;
@@ -725,12 +782,15 @@ footer p:nth-child(1) {
     flex-direction: column;
     align-items: flex-start;
 }
+
 .buy-ticket {
     margin-top: 8px;
+
     @media screen and (max-width: 768px) {
         margin-bottom: 8px;
     }
 }
+
 .buy-ticket a {
     font-size: 22px;
     font-weight: 700;
@@ -739,8 +799,8 @@ footer p:nth-child(1) {
     text-decoration: none;
     border-bottom: #107F00 4px solid;
 }
+
 .buy-ticket a:hover {
     color: #E33877;
     border-bottom: #E33877 4px solid;
 }
-
